@@ -20,10 +20,11 @@ typedef struct aviao{
 #ifndef FILA_H_INCLUDED
 #define FILA_H_INCLUDED
 
-void inserirNaFilaDecolagem(Aviao **inicio, Aviao **fim, Aviao *aviao);/** \Responsavel: */
-Aviao* Decolar(Aviao **inicio);/** \Responsavel: */
-void ListarFilaDeDecolagem(Aviao **inicio, Aviao **fim);/** \Responsavel: */
-void ListarProximoADecolar(Aviao **inicio, Aviao **fim);/** \Responsavel: */
-int qtdAvioesNaFila(Aviao **inicio, Aviao **fim);/** \Responsavel: */
+void inserirNaFilaDecolagem(Aviao **inicio, Aviao **fim, Aviao *aviao);/** \Responsavel: Fagner Maia*/
+Aviao* Decolar(Aviao **inicio);/** \Responsavel: Claudio Sena*/
+void ListarFilaDeDecolagem(Aviao **inicio, Aviao **fim);/** \Responsavel: Savio Nunes*/
+void ListarProximoADecolar(Aviao **inicio, Aviao **fim);/** \Responsavel: Rodrigo*/
+int qtdAvioesNaFila(Aviao **inicio, Aviao **fim);/** \Responsavel: Gabriel Mendes*/
+
 #endif // FILA_H_INCLUDED
 
