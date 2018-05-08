@@ -1,5 +1,21 @@
 #include "fila.h"
 
+/** \brief Função de insersão na fila
+ *  \author Fagner Maia
+ *  \param **inicio endereço de memoria do ponteiro do inicio da fila
+ *  \param **fim endereço de memoria do ponteiro do fim da fila
+ *  \param *aviao elemento a ser inserido na fila
+ *
+ * Insere o *aviao na fila de decolagem.
+ */
+void inserirNaFilaDecolagem (Aviao **inicio, Aviao **fim, Aviao *aviao){
+    if(*inicio==NULL)
+        *inicio=*fim=aviao;
+    else
+        (*fim)->prox=aviao;
+    *fim=Aviao;
+    }
+
 void ListarProximoADecolar(Aviao **inicio,Aviao **fim){
 
     if(*inicio == NULL)
