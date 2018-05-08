@@ -11,7 +11,7 @@
 
 typedef struct aviao{
     int codigo;
-    char capitão[20];
+    char capitao[20];
     char destino[20];
     struct aviao *prox;
 }Aviao;
