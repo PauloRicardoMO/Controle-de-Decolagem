@@ -41,3 +41,22 @@ void ListarProximoADecolar(Aviao **inicio,Aviao **fim){
         }
     }
 }
+
+/** \brief Função de contagem de avioes
+ *  \author Gabriel Mendes
+ *  \param **inicio endereço de memoria do ponteiro do inicio da fila
+ *  \param **fim endereço de memoria do ponteiro do fim da fila
+ *  \return qtd o numero de avioes na fila
+ *
+ * Conta quantos avioes estão à espera de decolar
+ */ 
+int qtdAvioesNaFila(Aviao **inicio, Aviao **fim){
+    int qtd = 0;
+       Avião *aux, *final= *fim;
+       do{
+           aux = Decolar(&(*inicio),&(*fim));
+           qtd++;
+           inserirNaFilaDecolagem(&(*inicio),&(*fim),aux);
+       } while (aux!=final);
+         return qtd;
+}
