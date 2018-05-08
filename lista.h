@@ -20,7 +20,7 @@ typedef struct aviao{
 #ifndef LISTA_H_INCLUDED
 #define LISTA_H_INCLUDED
 
-Aviao* criarAviao(); /** \Responsavel: */
-Aviao* insereAviaoLista(Aviao **lista);/** \Responsavel: */
-Aviao* buscarAviao(Aviao *lista);/** \Responsavel: */
+Aviao* criarAviao(); /** \Responsavel: Paulo Ricardo*/
+Aviao* insereAviaoLista(Aviao **lista);/** \Responsavel: Alex Bruno*/
+Aviao* buscarAviao(Aviao *lista);/** \Responsavel: Paulo Ricardo*/
 #endif // LISTA_H_INCLUDED
