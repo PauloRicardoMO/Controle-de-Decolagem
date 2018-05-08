@@ -11,7 +11,7 @@
 
 typedef struct aviao{
     int codigo;
-    char capitão[20];
+    char capitao[20];
     char destino[20];
     struct aviao *prox;
 }Aviao;
@@ -20,10 +20,11 @@ typedef struct aviao{
 #ifndef FILA_H_INCLUDED
 #define FILA_H_INCLUDED
 
-void inserirNaFilaDecolagem(Aviao **inicio, Aviao **fim, Aviao aviao);/** \Responsavel: Fagner Maia*/
+void inserirNaFilaDecolagem(Aviao **inicio, Aviao **fim, Aviao *aviao);/** \Responsavel: Fagner Maia*/
 Aviao* Decolar(Aviao **inicio);/** \Responsavel: Claudio Sena*/
 void ListarFilaDeDecolagem(Aviao **inicio, Aviao **fim);/** \Responsavel: Savio Nunes*/
 void ListarProximoADecolar(Aviao **inicio, Aviao **fim);/** \Responsavel: Rodrigo*/
 int qtdAvioesNaFila(Aviao **inicio, Aviao **fim);/** \Responsavel: Gabriel Mendes*/
+
 #endif // FILA_H_INCLUDED
 
