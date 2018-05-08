@@ -1,7 +1,7 @@
-/** \brief Definição da biblioteca com funções referentes à Fila de decolagem
+/** \brief DefiniÃ§Ã£o da biblioteca com funÃ§Ãµes referentes Ã  Fila de decolagem
  *  \author Paulo Ricardo
  *
- * Definição dos cabeçalhos da funções e descrição dos respónsaveis por implementar cada função.
+ * DefiniÃ§Ã£o dos cabeÃ§alhos da funÃ§Ãµes e descriÃ§Ã£o dos respÃ³nsaveis por implementar cada funÃ§Ã£o.
  */
 #ifndef TIPO_AVIAO
 #define TIPO_AVIAO
@@ -11,7 +11,7 @@
 
 typedef struct aviao{
     int codigo;
-    char capitão[20];
+    char capitÃ£o[20];
     char destino[20];
     struct aviao *prox;
 }Aviao;
@@ -20,7 +20,7 @@ typedef struct aviao{
 #ifndef FILA_H_INCLUDED
 #define FILA_H_INCLUDED
 
-Aviao* inserirNaFilaDecolagem(Aviao **inicio, Aviao **fim, Aviao aviao);/** \Responsavel: */
+void inserirNaFilaDecolagem(Aviao **inicio, Aviao **fim, Aviao aviao);/** \Responsavel: */
 Aviao* Decolar(Aviao **inicio);/** \Responsavel: */
 void ListarFilaDeDecolagem(Aviao **inicio, Aviao **fim);/** \Responsavel: */
 void ListarProximoADecolar(Aviao **inicio, Aviao **fim);/** \Responsavel: */
