@@ -23,4 +23,5 @@ typedef struct aviao{
 Aviao* criarAviao(); /** \Responsavel: Paulo Ricardo*/
 Aviao* insereAviaoLista(Aviao **lista);/** \Responsavel: Alex Bruno*/
 Aviao* buscarAviao(Aviao *lista);/** \Responsavel: Paulo Ricardo*/
+Aviao* excluirAviao(Aviao **lista, Aviao *p);/** \Responsavel: Paulo Ricardo*/
 #endif // LISTA_H_INCLUDED
